@@ -1,0 +1,23 @@
+2026-07-24T00:54:56+00:00
+ Static hostname: paultran-pxe
+       Icon name: computer-desktop
+         Chassis: desktop 🖥️
+      Machine ID: abb9f22b5d464606968317dde17c4dc7
+         Boot ID: 155720a76e5543edaca3773cc4a56728
+Operating System: Ubuntu 24.04.3 LTS
+          Kernel: Linux 6.8.0-71-generic
+    Architecture: x86-64
+ Hardware Vendor: HP
+  Hardware Model: HP ProDesk 600 G5 Desktop Mini
+Firmware Version: R22 Ver. 02.25.00
+   Firmware Date: Fri 2026-01-09
+    Firmware Age: 6month 1w 6d
+Linux paultran-pxe 6.8.0-71-generic #71-Ubuntu SMP PREEMPT_DYNAMIC Tue Jul 22 16:52:38 UTC 2025 x86_64 x86_64 x86_64 GNU/Linux
+ 00:54:56 up  1:48,  2 users,  load average: 0.09, 0.05, 0.01
+               Local time: Fri 2026-07-24 00:54:56 UTC
+           Universal time: Fri 2026-07-24 00:54:56 UTC
+                 RTC time: Fri 2026-07-24 00:54:56
+                Time zone: Etc/UTC (UTC, +0000)
+System clock synchronized: yes
+              NTP service: active
+          RTC in local TZ: no

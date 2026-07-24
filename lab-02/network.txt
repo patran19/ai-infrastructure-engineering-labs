@@ -1,0 +1,39 @@
+lo               UNKNOWN        127.0.0.1/8 ::1/128 
+eno1             DOWN           
+enx9c69d33c3418  UP             10.10.0.56/16 metric 100 10.10.0.55/16 fe80::9e69:d3ff:fe3c:3418/64 
+wlp0s20f3        UP             10.16.66.159/22 fe80::caf4:cf4b:d6a1:c3ac/64 
+docker0          DOWN           172.17.0.1/16 
+br-acfe0d144b3e  UP             10.199.253.1/24 fe80::fc02:6eff:fe43:24af/64 
+veth173495b@if2  UP             fe80::14ea:78ff:fe33:c939/64 
+veth1b906d3@if2  UP             fe80::d41f:fdff:fe2c:8557/64 
+default via 10.10.11.250 dev enx9c69d33c3418 proto dhcp src 10.10.0.56 metric 100 
+default via 10.10.11.250 dev enx9c69d33c3418 proto dhcp src 10.10.0.55 metric 100 
+default via 10.16.64.1 dev wlp0s20f3 proto dhcp src 10.16.66.159 metric 600 
+1.0.0.1 via 10.10.11.250 dev enx9c69d33c3418 proto dhcp src 10.10.0.56 metric 100 
+1.1.1.1 via 10.10.11.250 dev enx9c69d33c3418 proto dhcp src 10.10.0.56 metric 100 
+8.8.4.4 via 10.10.11.250 dev enx9c69d33c3418 proto dhcp src 10.10.0.56 metric 100 
+8.8.8.8 via 10.10.11.250 dev enx9c69d33c3418 proto dhcp src 10.10.0.56 metric 100 
+9.9.9.9 via 10.10.11.250 dev enx9c69d33c3418 proto dhcp src 10.10.0.56 metric 100 
+10.10.0.0/16 dev enx9c69d33c3418 proto kernel scope link src 10.10.0.56 metric 100 
+10.10.0.0/16 dev enx9c69d33c3418 proto kernel scope link src 10.10.0.55 metric 100 
+10.10.11.250 dev enx9c69d33c3418 proto dhcp scope link src 10.10.0.56 metric 100 
+10.16.64.0/22 dev wlp0s20f3 proto kernel scope link src 10.16.66.159 metric 600 
+10.199.253.0/24 dev br-acfe0d144b3e proto kernel scope link src 10.199.253.1 
+172.17.0.0/16 dev docker0 proto kernel scope link src 172.17.0.1 linkdown 
+Netid State  Recv-Q Send-Q              Local Address:Port  Peer Address:PortProcess                                                                               
+udp   UNCONN 0      0                      127.0.0.54:53         0.0.0.0:*    users:(("systemd-resolve",pid=712,fd=16))                                            
+udp   UNCONN 0      0                   127.0.0.53%lo:53         0.0.0.0:*    users:(("systemd-resolve",pid=712,fd=14))                                            
+udp   UNCONN 0      0      10.10.0.56%enx9c69d33c3418:68         0.0.0.0:*    users:(("systemd-network",pid=698,fd=22))                                            
+tcp   LISTEN 0      4096                    127.0.0.1:42919      0.0.0.0:*    users:(("containerd",pid=1001,fd=15))                                                
+tcp   LISTEN 0      4096                      0.0.0.0:6767       0.0.0.0:*    users:(("docker-proxy",pid=1879,fd=7))                                               
+tcp   LISTEN 0      4096                127.0.0.53%lo:53         0.0.0.0:*    users:(("systemd-resolve",pid=712,fd=15))                                            
+tcp   LISTEN 0      2048                      0.0.0.0:9001       0.0.0.0:*    users:(("python",pid=1788,fd=13))                                                    
+tcp   LISTEN 0      4096                      0.0.0.0:22         0.0.0.0:*    users:(("sshd",pid=1496,fd=3),("systemd",pid=1,fd=195))                              
+tcp   LISTEN 0      4096                   127.0.0.54:53         0.0.0.0:*    users:(("systemd-resolve",pid=712,fd=17))                                            
+tcp   LISTEN 0      128                     127.0.0.1:6010       0.0.0.0:*    users:(("sshd",pid=83227,fd=8))                                                      
+tcp   LISTEN 0      4096                      0.0.0.0:27018      0.0.0.0:*    users:(("docker-proxy",pid=1910,fd=7))                                               
+tcp   LISTEN 0      4096                         [::]:6767          [::]:*    users:(("docker-proxy",pid=1885,fd=7))                                               
+tcp   LISTEN 0      511                             *:80               *:*    users:(("apache2",pid=6579,fd=4),("apache2",pid=6578,fd=4),("apache2",pid=1224,fd=4))
+tcp   LISTEN 0      4096                         [::]:22            [::]:*    users:(("sshd",pid=1496,fd=4),("systemd",pid=1,fd=196))                              
+tcp   LISTEN 0      128                         [::1]:6010          [::]:*    users:(("sshd",pid=83227,fd=7))                                                      
+tcp   LISTEN 0      4096                         [::]:27018         [::]:*    users:(("docker-proxy",pid=1917,fd=7))                                               

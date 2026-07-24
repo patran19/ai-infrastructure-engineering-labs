@@ -1,0 +1,84 @@
+Architecture:                         x86_64
+CPU op-mode(s):                       32-bit, 64-bit
+Address sizes:                        39 bits physical, 48 bits virtual
+Byte Order:                           Little Endian
+CPU(s):                               6
+On-line CPU(s) list:                  0-5
+Vendor ID:                            GenuineIntel
+BIOS Vendor ID:                       Intel(R) Corporation
+Model name:                           Intel(R) Core(TM) i5-9500T CPU @ 2.20GHz
+BIOS Model name:                      Intel(R) Core(TM) i5-9500T CPU @ 2.20GHz To Be Filled By O.E.M. CPU @ 2.1GHz
+BIOS CPU family:                      205
+CPU family:                           6
+Model:                                158
+Thread(s) per core:                   1
+Core(s) per socket:                   6
+Socket(s):                            1
+Stepping:                             10
+CPU(s) scaling MHz:                   34%
+CPU max MHz:                          3700.0000
+CPU min MHz:                          800.0000
+BogoMIPS:                             4399.99
+Flags:                                fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc art arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc cpuid aperfmperf pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm 3dnowprefetch cpuid_fault epb pti ssbd ibrs ibpb stibp tpr_shadow flexpriority ept vpid ept_ad fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid mpx rdseed adx smap clflushopt intel_pt xsaveopt xsavec xgetbv1 xsaves dtherm ida arat pln pts hwp hwp_notify hwp_act_window hwp_epp vnmi md_clear flush_l1d arch_capabilities
+Virtualization:                       VT-x
+L1d cache:                            192 KiB (6 instances)
+L1i cache:                            192 KiB (6 instances)
+L2 cache:                             1.5 MiB (6 instances)
+L3 cache:                             9 MiB (1 instance)
+NUMA node(s):                         1
+NUMA node0 CPU(s):                    0-5
+Vulnerability Gather data sampling:   Mitigation; Microcode
+Vulnerability Itlb multihit:          KVM: Mitigation: VMX disabled
+Vulnerability L1tf:                   Mitigation; PTE Inversion; VMX conditional cache flushes, SMT disabled
+Vulnerability Mds:                    Mitigation; Clear CPU buffers; SMT disabled
+Vulnerability Meltdown:               Mitigation; PTI
+Vulnerability Mmio stale data:        Mitigation; Clear CPU buffers; SMT disabled
+Vulnerability Reg file data sampling: Not affected
+Vulnerability Retbleed:               Mitigation; IBRS
+Vulnerability Spec rstack overflow:   Not affected
+Vulnerability Spec store bypass:      Mitigation; Speculative Store Bypass disabled via prctl
+Vulnerability Spectre v1:             Mitigation; usercopy/swapgs barriers and __user pointer sanitization
+Vulnerability Spectre v2:             Mitigation; IBRS; IBPB conditional; STIBP disabled; RSB filling; PBRSB-eIBRS Not affected; BHI Not affected
+Vulnerability Srbds:                  Mitigation; Microcode
+Vulnerability Tsx async abort:        Mitigation; TSX disabled
+               total        used        free      shared  buff/cache   available
+Mem:            15Gi       906Mi        12Gi       2.3Mi       2.8Gi        14Gi
+Swap:          4.0Gi          0B       4.0Gi
+NAME                        SIZE FSTYPE      MOUNTPOINT
+nvme0n1                   476.9G             
+├─nvme0n1p1                   1G vfat        /boot/efi
+├─nvme0n1p2                   2G ext4        /boot
+└─nvme0n1p3               473.9G LVM2_member 
+  └─ubuntu--vg-ubuntu--lv 473.9G ext4        /
+TARGET                                                                                              SOURCE                            FSTYPE      OPTIONS
+/                                                                                                   /dev/mapper/ubuntu--vg-ubuntu--lv ext4        rw,relatime
+├─/sys                                                                                              sysfs                             sysfs       rw,nosuid,nodev,noexec,relatime
+│ ├─/sys/firmware/efi/efivars                                                                       efivarfs                          efivarfs    rw,nosuid,nodev,noexec,relatime
+│ ├─/sys/kernel/security                                                                            securityfs                        securityfs  rw,nosuid,nodev,noexec,relatime
+│ ├─/sys/fs/cgroup                                                                                  cgroup2                           cgroup2     rw,nosuid,nodev,noexec,relatime,nsdelegate,memory_recursiveprot
+│ ├─/sys/fs/pstore                                                                                  pstore                            pstore      rw,nosuid,nodev,noexec,relatime
+│ ├─/sys/fs/bpf                                                                                     bpf                               bpf         rw,nosuid,nodev,noexec,relatime,mode=700
+│ ├─/sys/kernel/debug                                                                               debugfs                           debugfs     rw,nosuid,nodev,noexec,relatime
+│ │ └─/sys/kernel/debug/tracing                                                                     tracefs                           tracefs     rw,nosuid,nodev,noexec,relatime
+│ ├─/sys/kernel/tracing                                                                             tracefs                           tracefs     rw,nosuid,nodev,noexec,relatime
+│ ├─/sys/fs/fuse/connections                                                                        fusectl                           fusectl     rw,nosuid,nodev,noexec,relatime
+│ └─/sys/kernel/config                                                                              configfs                          configfs    rw,nosuid,nodev,noexec,relatime
+├─/proc                                                                                             proc                              proc        rw,nosuid,nodev,noexec,relatime
+│ └─/proc/sys/fs/binfmt_misc                                                                        systemd-1                         autofs      rw,relatime,fd=32,pgrp=1,timeout=0,minproto=5,maxproto=5,direct,pipe_ino=2551
+│   └─/proc/sys/fs/binfmt_misc                                                                      binfmt_misc                       binfmt_misc rw,nosuid,nodev,noexec,relatime
+├─/dev                                                                                              udev                              devtmpfs    rw,nosuid,relatime,size=8033900k,nr_inodes=2008475,mode=755,inode64
+│ ├─/dev/pts                                                                                        devpts                            devpts      rw,nosuid,noexec,relatime,gid=5,mode=620,ptmxmode=000
+│ ├─/dev/shm                                                                                        tmpfs                             tmpfs       rw,nosuid,nodev,inode64
+│ ├─/dev/hugepages                                                                                  hugetlbfs                         hugetlbfs   rw,nosuid,nodev,relatime,pagesize=2M
+│ └─/dev/mqueue                                                                                     mqueue                            mqueue      rw,nosuid,nodev,noexec,relatime
+├─/run                                                                                              tmpfs                             tmpfs       rw,nosuid,nodev,noexec,relatime,size=1614760k,mode=755,inode64
+│ ├─/run/lock                                                                                       tmpfs                             tmpfs       rw,nosuid,nodev,noexec,relatime,size=5120k,inode64
+│ ├─/run/user/1000                                                                                  tmpfs                             tmpfs       rw,nosuid,nodev,relatime,size=1614760k,nr_inodes=403690,mode=700,uid=1000,gid=1000,inode64
+│ ├─/run/docker/netns/default                                                                       nsfs[net:[4026531840]]            nsfs        rw
+│ ├─/run/docker/netns/d036e641ce12                                                                  nsfs[net:[4026532460]]            nsfs        rw
+│ └─/run/docker/netns/21b14a69350b                                                                  nsfs[net:[4026532356]]            nsfs        rw
+├─/boot                                                                                             /dev/nvme0n1p2                    ext4        rw,relatime
+│ └─/boot/efi                                                                                       /dev/nvme0n1p1                    vfat        rw,relatime,fmask=0022,dmask=0022,codepage=437,iocharset=iso8859-1,shortname=mixed,errors=remount-ro
+├─/var/lib/docker/rootfs/overlayfs/57a687f195a645090475a3e69b651aef3fc4dee23bd22f5ccfa95809c58000cc overlay                           overlay     rw,relatime,lowerdir=/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/127/fs:/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/22/fs:/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/21/fs:/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/20/fs:/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/19/fs:/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/12/fs:/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/11/fs:/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/10/fs:/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/1/fs,upperdir=/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/131/fs,workdir=/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/131/work,nouserxattr
+├─/var/lib/docker/rootfs/overlayfs/793667989f6d8e53308fe5c0b3d2fcb20559898a095ddab77d8f59aec380b90b overlay                           overlay     rw,relatime,lowerdir=/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/120/fs:/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/34/fs:/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/33/fs:/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/32/fs:/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/31/fs:/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/30/fs:/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/29/fs:/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/28/fs:/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/27/fs:/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/26/fs:/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/25/fs:/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/24/fs:/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/23/fs,upperdir=/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/121/fs,workdir=/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/121/work,nouserxattr
+└─/var/lib/docker/rootfs/overlayfs/15b54ebecb7f34b15cd90a8ac7b62a27de790994f1b54682912c9faff15ba42c overlay                           overlay     rw,relatime,lowerdir=/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/123/fs:/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/55/fs:/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/54/fs:/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/53/fs:/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/52/fs:/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/5/fs:/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/4/fs:/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/3/fs:/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/2/fs:/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/1/fs,upperdir=/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/129/fs,workdir=/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/129/work,nouserxattr
